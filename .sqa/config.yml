@@ -1,0 +1,64 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/2.0.0
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/cerfacs-globc/xtclim:
+      branch: master
+      repo: https://github.com/cerfacs-globc/xtclim
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/cerfacs-globc/xtclim git:
+        commands:
+        - /usr/bin/env sh .sqa/script.ugly-wisteria-dog.sh
+        container: qc.acc_frumpy-malachite-tarsier
+  QC.Doc:
+    repos:
+      github.com/cerfacs-globc/xtclim find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.nerdy-firebrick-wombat.sh
+        container: qc.doc_greasy-thistle-mist
+      github.com/cerfacs-globc/xtclim git:
+        commands:
+        - /usr/bin/env sh .sqa/script.greasy-coral-kakapo.sh
+        container: qc.doc_gimpy-green-wasp
+      github.com/cerfacs-globc/xtclim markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.stuffy-cornflower-civet.sh
+        container: qc.doc_scanty-ecru-barnacle
+  QC.Lic:
+    repos:
+      github.com/cerfacs-globc/xtclim licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.woolly-salmon-corgi.sh
+        container: qc.lic_nerdy-firebrick-akbash
+  QC.Sec:
+    repos:
+      github.com/cerfacs-globc/xtclim bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.hilly-amber-caracal.sh
+        container: qc.sec_nerdy-sangria-magpie
+  QC.Sty:
+    repos:
+      github.com/cerfacs-globc/xtclim flake8:
+        commands:
+        - /usr/bin/env sh .sqa/script.wiggy-flax-millipede.sh
+        container: qc.sty_randy-lemon-burmese
+  QC.Uni:
+    repos:
+      github.com/cerfacs-globc/xtclim pytest:
+        commands:
+        - /usr/bin/env sh .sqa/script.ugly-green-squirt.sh
+        container: qc.uni_dorky-flax-oyster
+  QC.Ver:
+    repos:
+      github.com/cerfacs-globc/xtclim get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.bluesy-thistle-loon.sh
+        container: qc.ver_hasty-saffron-pinscher
+timeout: 5400
