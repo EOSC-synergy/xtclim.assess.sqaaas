@@ -15,50 +15,28 @@ sqa_criteria:
     repos:
       github.com/cerfacs-globc/xtclim git:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-wisteria-dog.sh
-        container: qc.acc_frumpy-malachite-tarsier
+        - /usr/bin/env sh .sqa/script.chewy-lavender-affenpinscher.sh
+        container: qc.acc_sleepy-orchid-sponge
   QC.Doc:
     repos:
       github.com/cerfacs-globc/xtclim find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.nerdy-firebrick-wombat.sh
-        container: qc.doc_greasy-thistle-mist
+        - /usr/bin/env sh .sqa/script.snoopy-crimson-burmese.sh
+        container: qc.doc_greasy-chestnut-dhole
       github.com/cerfacs-globc/xtclim git:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-coral-kakapo.sh
-        container: qc.doc_gimpy-green-wasp
-      github.com/cerfacs-globc/xtclim markdownlint:
-        commands:
-        - /usr/bin/env sh .sqa/script.stuffy-cornflower-civet.sh
-        container: qc.doc_scanty-ecru-barnacle
+        - /usr/bin/env sh .sqa/script.sunny-green-zonkey.sh
+        container: qc.doc_skinny-heliotrope-slug
   QC.Lic:
     repos:
       github.com/cerfacs-globc/xtclim licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-salmon-corgi.sh
-        container: qc.lic_nerdy-firebrick-akbash
-  QC.Sec:
-    repos:
-      github.com/cerfacs-globc/xtclim bandit:
-        commands:
-        - /usr/bin/env sh .sqa/script.hilly-amber-caracal.sh
-        container: qc.sec_nerdy-sangria-magpie
-  QC.Sty:
-    repos:
-      github.com/cerfacs-globc/xtclim flake8:
-        commands:
-        - /usr/bin/env sh .sqa/script.wiggy-flax-millipede.sh
-        container: qc.sty_randy-lemon-burmese
-  QC.Uni:
-    repos:
-      github.com/cerfacs-globc/xtclim pytest:
-        commands:
-        - /usr/bin/env sh .sqa/script.ugly-green-squirt.sh
-        container: qc.uni_dorky-flax-oyster
+        - /usr/bin/env sh .sqa/script.cozy-olivine-wolfhound.sh
+        container: qc.lic_squeaky-violet-chamois
   QC.Ver:
     repos:
       github.com/cerfacs-globc/xtclim get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.bluesy-thistle-loon.sh
-        container: qc.ver_hasty-saffron-pinscher
+        - /usr/bin/env sh .sqa/script.seedy-cobalt-tzu.sh
+        container: qc.ver_flimsy-magenta-fly
 timeout: 5400
