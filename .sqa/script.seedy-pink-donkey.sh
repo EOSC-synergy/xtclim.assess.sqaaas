@@ -5,5 +5,5 @@
 
 (
 cd github.com/cerfacs-globc/xtclim &&
-    licensee detect . --confidence 60 --json
+    licensee detect . --confidence 60 --json 
 )

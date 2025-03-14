@@ -5,5 +5,5 @@
 
 (
 cd github.com/cerfacs-globc/xtclim &&
-    git rev-parse --is-inside-work-tree
+    mdl --json  .
 )
