@@ -4,61 +4,69 @@ config:
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: main
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
-    github.com/cerfacs-globc/xtclim:
-      branch: master
-      repo: https://github.com/cerfacs-globc/xtclim
+    github.com/clemoule/xtclim:
+      branch: notebook_integration
+      repo: https://github.com/clemoule/xtclim
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/cerfacs-globc/xtclim git:
+      github.com/clemoule/xtclim git:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-persimmon-woodpecker.sh
-        container: qc.acc_cheeky-purple-monkey
+        - /usr/bin/env sh .sqa/script.zippy-seashell-bonobo.sh
+        container: qc.acc_jumpy-scarlet-gopher
   QC.Doc:
     repos:
-      github.com/cerfacs-globc/xtclim find_doc_files.py:
+      github.com/clemoule/xtclim find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.zippy-ultramarine-barb.sh
-        container: qc.doc_shaggy-amber-newt
-      github.com/cerfacs-globc/xtclim git:
+        - /usr/bin/env sh .sqa/script.slimy-magenta-heron.sh
+        container: qc.doc_silly-champagne-beetle
+      github.com/clemoule/xtclim git:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-malachite-forest.sh
-        container: qc.doc_whiny-champagne-rattlesnake
-      github.com/cerfacs-globc/xtclim markdownlint:
+        - /usr/bin/env sh .sqa/script.grumpy-heliotrope-camel.sh
+        container: qc.doc_geeky-gamboge-dolphin
+      github.com/clemoule/xtclim markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-chocolate-fousek.sh
-        container: qc.doc_lovely-taupe-scorpion
+        - /usr/bin/env sh .sqa/script.clammy-seashell-cassowary.sh
+        container: qc.doc_fuzzy-xanthic-molly
   QC.Lic:
     repos:
-      github.com/cerfacs-globc/xtclim licensee:
+      github.com/clemoule/xtclim licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-pink-donkey.sh
-        container: qc.lic_whiny-copper-guppy
+        - /usr/bin/env sh .sqa/script.lousy-green-hare.sh
+        container: qc.lic_snappy-salmon-hare
   QC.Sec:
     repos:
-      github.com/cerfacs-globc/xtclim bandit:
+      github.com/clemoule/xtclim bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-taupe-heron.sh
-        container: qc.sec_pokey-rose-tuatara
+        - /usr/bin/env sh .sqa/script.grumpy-emerald-cichlid.sh
+        container: qc.sec_thirsty-magnolia-schnauzer
   QC.Sty:
     repos:
-      github.com/cerfacs-globc/xtclim flake8:
+      github.com/clemoule/xtclim flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-apricot-mongrel.sh
-        container: qc.sty_cheeky-persimmon-wrasse
+        - /usr/bin/env sh .sqa/script.cheeky-blue-dalmatian.sh
+        container: qc.sty_lousy-white-sloth
+      github.com/clemoule/xtclim hadolint:
+        commands:
+        - /usr/bin/env sh .sqa/script.fuzzy-zucchini-baboon.sh
+        container: qc.sty_squeaky-rust-schnauzer
+      github.com/clemoule/xtclim jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.shaky-wisteria-starfish.sh
+        container: qc.sty_gummy-beige-robin
   QC.Uni:
     repos:
-      github.com/cerfacs-globc/xtclim pytest:
+      github.com/clemoule/xtclim pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-flax-tuatara.sh
-        container: qc.uni_cozy-cream-millipede
+        - /usr/bin/env sh .sqa/script.bumpy-seashell-budgerigar.sh
+        container: qc.uni_hazy-copper-tortoise
   QC.Ver:
     repos:
-      github.com/cerfacs-globc/xtclim get_git_tags.py:
+      github.com/clemoule/xtclim get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.stuffy-celadon-earwig.sh
-        container: qc.ver_nerdy-beige-otter
+        - /usr/bin/env sh .sqa/script.muzzy-cyan-devil.sh
+        container: qc.ver_sleepy-coral-owl
 timeout: 5400
