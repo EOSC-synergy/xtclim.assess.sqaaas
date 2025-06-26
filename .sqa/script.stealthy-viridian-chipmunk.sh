@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/clemoule/xtclim &&
-    get_git_tags.py
+cd github.com/PalomoIFCA/xtclim &&
+    hadolint Dockerfile --failure-threshold error
 )
