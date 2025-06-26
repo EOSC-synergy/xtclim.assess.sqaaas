@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/PalomoIFCA/xtclim &&
-    git rev-parse --is-inside-work-tree 
+cd github.com/clemoule/xtclim &&
+    cat codemeta.json
 )

@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/PalomoIFCA/xtclim &&
-    licensee detect . --confidence 60 --json 
+cd github.com/clemoule/xtclim &&
+    bandit -f json --quiet  --confidence-level high --severity-level high --recursive  .
 )

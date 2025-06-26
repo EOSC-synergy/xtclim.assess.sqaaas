@@ -4,75 +4,75 @@ config:
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: main
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
-    github.com/PalomoIFCA/xtclim:
+    github.com/clemoule/xtclim:
       branch: notebook_integration
-      repo: https://github.com/PalomoIFCA/xtclim
+      repo: https://github.com/clemoule/xtclim
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/PalomoIFCA/xtclim git:
+      github.com/clemoule/xtclim git:
         commands:
-        - /usr/bin/env sh .sqa/script.stuffy-buff-scorpion.sh
-        container: qc.acc_scummy-apricot-labradoodle
+        - /usr/bin/env sh .sqa/script.snazzy-tomato-chihuahua.sh
+        container: qc.acc_breezy-vermilion-dodo
   QC.Doc:
     repos:
-      github.com/PalomoIFCA/xtclim find_doc_files.py:
+      github.com/clemoule/xtclim find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-cobalt-sloth.sh
-        container: qc.doc_chewy-flax-tetra
-      github.com/PalomoIFCA/xtclim git:
+        - /usr/bin/env sh .sqa/script.pasty-periwinkle-wolverine.sh
+        container: qc.doc_flimsy-ochre-swan
+      github.com/clemoule/xtclim git:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-khaki-barracuda.sh
-        container: qc.doc_shabby-tomato-saola
-      github.com/PalomoIFCA/xtclim markdownlint:
+        - /usr/bin/env sh .sqa/script.hasty-rust-booby.sh
+        container: qc.doc_gummy-lavender-falcon
+      github.com/clemoule/xtclim markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-champagne-boar.sh
-        container: qc.doc_gloppy-cornflower-bulldog
+        - /usr/bin/env sh .sqa/script.hasty-corn-bee.sh
+        container: qc.doc_chummy-turquoise-stoat
   QC.Lic:
     repos:
-      github.com/PalomoIFCA/xtclim licensee:
+      github.com/clemoule/xtclim licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-violet-vole.sh
-        container: qc.lic_chummy-emerald-zonkey
+        - /usr/bin/env sh .sqa/script.snazzy-heliotrope-oyster.sh
+        container: qc.lic_geeky-pear-dolphin
   QC.Met:
     repos:
-      github.com/PalomoIFCA/xtclim validate_codemeta:
+      github.com/clemoule/xtclim validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-lavender-axolotl.sh
-        container: qc.met_scummy-turquoise-iguana
+        - /usr/bin/env sh .sqa/script.freaky-fuchsia-lobster.sh
+        container: qc.met_breezy-denim-stingray
   QC.Sec:
     repos:
-      github.com/PalomoIFCA/xtclim bandit:
+      github.com/clemoule/xtclim bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-rose-turtle.sh
-        container: qc.sec_stealthy-ecru-bison
+        - /usr/bin/env sh .sqa/script.jumpy-gold-tapir.sh
+        container: qc.sec_cheeky-teal-molly
   QC.Sty:
     repos:
-      github.com/PalomoIFCA/xtclim flake8:
+      github.com/clemoule/xtclim flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-cinnabar-mole.sh
-        container: qc.sty_lovely-cobalt-akita
-      github.com/PalomoIFCA/xtclim hadolint:
+        - /usr/bin/env sh .sqa/script.stuffy-firebrick-reindeer.sh
+        container: qc.sty_chewy-dandelion-russel
+      github.com/clemoule/xtclim hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.stealthy-viridian-chipmunk.sh
-        container: qc.sty_grumpy-khaki-dunker
-      github.com/PalomoIFCA/xtclim jsonlint:
+        - /usr/bin/env sh .sqa/script.homey-periwinkle-lion.sh
+        container: qc.sty_squeaky-copper-centipede
+      github.com/clemoule/xtclim jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-xanthic-wolf.sh
-        container: qc.sty_skanky-aquamarine-oyster
+        - /usr/bin/env sh .sqa/script.tasty-seashell-uguisu.sh
+        container: qc.sty_ugly-flax-tuatara
   QC.Uni:
     repos:
-      github.com/PalomoIFCA/xtclim pytest:
+      github.com/clemoule/xtclim pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.nerdy-seashell-lobster.sh
-        container: qc.uni_pasty-apricot-raccoon
+        - /usr/bin/env sh .sqa/script.stuffy-seashell-axolotl.sh
+        container: qc.uni_queasy-olivine-monster
   QC.Ver:
     repos:
-      github.com/PalomoIFCA/xtclim get_git_tags.py:
+      github.com/clemoule/xtclim get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.baggy-lemon-ibis.sh
-        container: qc.ver_shaggy-tangerine-emu
+        - /usr/bin/env sh .sqa/script.skimpy-buff-antelope.sh
+        container: qc.ver_zippy-goldenrod-worm
 timeout: 5400
