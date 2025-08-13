@@ -15,64 +15,64 @@ sqa_criteria:
     repos:
       github.com/interTwin-eu/xtclim git:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-ultramarine-snail.sh
-        container: qc.acc_sloppy-persimmon-impala
+        - /usr/bin/env sh .sqa/script.woolly-cyan-frise.sh
+        container: qc.acc_chewy-coral-cockroach
   QC.Doc:
     repos:
       github.com/interTwin-eu/xtclim find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-cinnabar-bee.sh
-        container: qc.doc_scanty-ruby-mau
+        - /usr/bin/env sh .sqa/script.crappy-cardinal-lizard.sh
+        container: qc.doc_flimsy-pear-neanderthal
       github.com/interTwin-eu/xtclim git:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-emerald-antelope.sh
-        container: qc.doc_hasty-lilac-wasp
+        - /usr/bin/env sh .sqa/script.slaphappy-blue-moorhen.sh
+        container: qc.doc_sleazy-malachite-swan
       github.com/interTwin-eu/xtclim markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-amaranth-bullfrog.sh
-        container: qc.doc_wheezy-carmine-numbat
+        - /usr/bin/env sh .sqa/script.snazzy-persimmon-crocodile.sh
+        container: qc.doc_foggy-gold-monkey
   QC.Lic:
     repos:
       github.com/interTwin-eu/xtclim licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.scummy-fuchsia-ragdoll.sh
-        container: qc.lic_paltry-champagne-beetle
+        - /usr/bin/env sh .sqa/script.beady-beige-antelope.sh
+        container: qc.lic_gloppy-purple-forest
   QC.Met:
     repos:
       github.com/interTwin-eu/xtclim validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-sepia-dog.sh
-        container: qc.met_droopy-myrtle-stingray
+        - /usr/bin/env sh .sqa/script.shabby-chestnut-seal.sh
+        container: qc.met_geeky-persimmon-wolverine
   QC.Sec:
     repos:
       github.com/interTwin-eu/xtclim bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-bronze-flamingo.sh
-        container: qc.sec_hazy-cerulean-cuscus
+        - /usr/bin/env sh .sqa/script.pretty-grey-mayfly.sh
+        container: qc.sec_hasty-corn-seahorse
   QC.Sty:
     repos:
       github.com/interTwin-eu/xtclim flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-alizarin-cougar.sh
-        container: qc.sty_messy-jade-tamarin
+        - /usr/bin/env sh .sqa/script.shaggy-asparagus-newt.sh
+        container: qc.sty_woozy-russet-setter
       github.com/interTwin-eu/xtclim hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-taupe-chamois.sh
-        container: qc.sty_dorky-chartreuse-crocodile
+        - /usr/bin/env sh .sqa/script.gamy-purple-mandrill.sh
+        container: qc.sty_crabby-burgundy-molly
       github.com/interTwin-eu/xtclim jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.sleazy-malachite-barnacle.sh
-        container: qc.sty_nerdy-champagne-markhor
+        - /usr/bin/env sh .sqa/script.snappy-orange-squirrel.sh
+        container: qc.sty_tasty-champagne-wolverine
   QC.Uni:
     repos:
       github.com/interTwin-eu/xtclim pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.chummy-mauve-barb.sh
-        container: qc.uni_flabby-russet-angora
+        - /usr/bin/env sh .sqa/script.ready-amethyst-raccoon.sh
+        container: qc.uni_scummy-cyan-havanese
   QC.Ver:
     repos:
       github.com/interTwin-eu/xtclim get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.cranky-denim-cat.sh
-        container: qc.ver_sleazy-seashell-bandicoot
+        - /usr/bin/env sh .sqa/script.lumpy-dandelion-mandrill.sh
+        container: qc.ver_slimy-orchid-dachsbracke
 timeout: 5400
