@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/interTwin-eu/xtclim &&
+cd github.com/clemoule/xtclim &&
     hadolint Dockerfile --failure-threshold error
 )
