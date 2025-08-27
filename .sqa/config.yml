@@ -15,64 +15,64 @@ sqa_criteria:
     repos:
       github.com/clemoule/xtclim git:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-coral-angelfish.sh
-        container: qc.acc_lousy-scarlet-kingfisher
+        - /usr/bin/env sh .sqa/script.homey-peach-ray.sh
+        container: qc.acc_randy-charcoal-meerkat
   QC.Doc:
     repos:
       github.com/clemoule/xtclim find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-lavender-wildebeest.sh
-        container: qc.doc_baggy-ecru-mole
+        - /usr/bin/env sh .sqa/script.crabby-gold-lemur.sh
+        container: qc.doc_skinny-seashell-wolverine
       github.com/clemoule/xtclim git:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-denim-frog.sh
-        container: qc.doc_bluesy-beige-lizard
+        - /usr/bin/env sh .sqa/script.thirsty-lavender-squid.sh
+        container: qc.doc_sickly-khaki-okapi
       github.com/clemoule/xtclim markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-flax-bee.sh
-        container: qc.doc_craggy-pumpkin-dalmatian
+        - /usr/bin/env sh .sqa/script.cheeky-indigo-magpie.sh
+        container: qc.doc_skanky-vermilion-rhinoceros
   QC.Lic:
     repos:
       github.com/clemoule/xtclim licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-corn-uguisu.sh
-        container: qc.lic_snippy-lime-nightingale
+        - /usr/bin/env sh .sqa/script.breezy-cornflower-maltese.sh
+        container: qc.lic_gimpy-eggplant-barnacle
   QC.Met:
     repos:
       github.com/clemoule/xtclim validate_codemeta:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-violet-fox.sh
-        container: qc.met_whiny-dandelion-rottweiler
+        - /usr/bin/env sh .sqa/script.grumpy-platinum-falcon.sh
+        container: qc.met_shaky-green-cuttlefish
   QC.Sec:
     repos:
       github.com/clemoule/xtclim bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-sepia-dingo.sh
-        container: qc.sec_slaphappy-azure-chimpanzee
+        - /usr/bin/env sh .sqa/script.cloudy-lime-insect.sh
+        container: qc.sec_scanty-tan-tang
   QC.Sty:
     repos:
       github.com/clemoule/xtclim flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-chartreuse-bordeaux.sh
-        container: qc.sty_sleepy-tangerine-crane
+        - /usr/bin/env sh .sqa/script.boozy-charcoal-chow.sh
+        container: qc.sty_cloudy-gamboge-lizard
       github.com/clemoule/xtclim hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-amethyst-coral.sh
-        container: qc.sty_squirrely-scarlet-angora
+        - /usr/bin/env sh .sqa/script.droopy-platinum-wrasse.sh
+        container: qc.sty_scanty-ivory-buffalo
       github.com/clemoule/xtclim jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-chocolate-coyote.sh
-        container: qc.sty_greasy-malachite-civet
+        - /usr/bin/env sh .sqa/script.lovely-grey-abyssinian.sh
+        container: qc.sty_goopy-azure-dragonfly
   QC.Uni:
     repos:
       github.com/clemoule/xtclim pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-cornflower-kangaroo.sh
-        container: qc.uni_flimsy-gamboge-fossa
+        - /usr/bin/env sh .sqa/script.surly-wheat-foxhound.sh
+        container: qc.uni_smelly-olive-serval
   QC.Ver:
     repos:
       github.com/clemoule/xtclim get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-blue-mayfly.sh
-        container: qc.ver_ready-amethyst-wallaby
+        - /usr/bin/env sh .sqa/script.shaky-flax-camel.sh
+        container: qc.ver_crappy-gamboge-peccary
 timeout: 5400
