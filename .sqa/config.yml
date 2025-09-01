@@ -4,69 +4,75 @@ config:
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: main
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
-    github.com/clemoule/xtclim:
+    github.com/interTwin-eu/xtclim:
       branch: main
-      repo: https://github.com/clemoule/xtclim
+      repo: https://github.com/interTwin-eu/xtclim
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/clemoule/xtclim git:
+      github.com/interTwin-eu/xtclim git:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-buff-walrus.sh
-        container: qc.acc_paltry-beige-bat
+        - /usr/bin/env sh .sqa/script.bumpy-charcoal-rhinoceros.sh
+        container: qc.acc_flimsy-red-loon
   QC.Doc:
     repos:
-      github.com/clemoule/xtclim find_doc_files.py:
+      github.com/interTwin-eu/xtclim find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-olive-hyena.sh
-        container: qc.doc_snippy-linen-gar
-      github.com/clemoule/xtclim git:
+        - /usr/bin/env sh .sqa/script.messy-yellow-kudu.sh
+        container: qc.doc_pokey-pear-llama
+      github.com/interTwin-eu/xtclim git:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-ultramarine-cat.sh
-        container: qc.doc_lovely-amaranth-corgi
-      github.com/clemoule/xtclim markdownlint:
+        - /usr/bin/env sh .sqa/script.snoopy-cinnabar-centipede.sh
+        container: qc.doc_flaky-magenta-bonobo
+      github.com/interTwin-eu/xtclim markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-dandelion-spoonbill.sh
-        container: qc.doc_cranky-maroon-vulture
+        - /usr/bin/env sh .sqa/script.slimy-puce-monster.sh
+        container: qc.doc_scanty-taupe-sheepdog
   QC.Lic:
     repos:
-      github.com/clemoule/xtclim licensee:
+      github.com/interTwin-eu/xtclim licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-silver-havanese.sh
-        container: qc.lic_ready-platinum-bear
+        - /usr/bin/env sh .sqa/script.muggy-goldenrod-clam.sh
+        container: qc.lic_bumpy-chestnut-dane
+  QC.Met:
+    repos:
+      github.com/interTwin-eu/xtclim validate_codemeta:
+        commands:
+        - /usr/bin/env sh .sqa/script.squirrely-razzmatazz-dog.sh
+        container: qc.met_gamy-champagne-lemur
   QC.Sec:
     repos:
-      github.com/clemoule/xtclim bandit:
+      github.com/interTwin-eu/xtclim bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-rust-numbat.sh
-        container: qc.sec_droopy-cornflower-gecko
+        - /usr/bin/env sh .sqa/script.clammy-denim-mule.sh
+        container: qc.sec_leaky-ivory-whippet
   QC.Sty:
     repos:
-      github.com/clemoule/xtclim flake8:
+      github.com/interTwin-eu/xtclim flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-asparagus-hyena.sh
-        container: qc.sty_smelly-emerald-ragdoll
-      github.com/clemoule/xtclim hadolint:
+        - /usr/bin/env sh .sqa/script.seedy-cerise-monkey.sh
+        container: qc.sty_jumpy-firebrick-koala
+      github.com/interTwin-eu/xtclim hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-copper-fish.sh
-        container: qc.sty_blurry-ochre-dormouse
-      github.com/clemoule/xtclim jsonlint:
+        - /usr/bin/env sh .sqa/script.droopy-vermilion-shrew.sh
+        container: qc.sty_snazzy-corn-iguana
+      github.com/interTwin-eu/xtclim jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-xanthic-newfoundland.sh
-        container: qc.sty_ready-maroon-chimpanzee
+        - /usr/bin/env sh .sqa/script.droopy-sangria-koala.sh
+        container: qc.sty_stealthy-crimson-otter
   QC.Uni:
     repos:
-      github.com/clemoule/xtclim pytest:
+      github.com/interTwin-eu/xtclim pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-cardinal-crane.sh
-        container: qc.uni_boozy-aquamarine-hornet
+        - /usr/bin/env sh .sqa/script.gamy-smalt-civet.sh
+        container: qc.uni_zippy-brass-capybara
   QC.Ver:
     repos:
-      github.com/clemoule/xtclim get_git_tags.py:
+      github.com/interTwin-eu/xtclim get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-heliotrope-forest.sh
-        container: qc.ver_lanky-grey-lynx
+        - /usr/bin/env sh .sqa/script.homely-corn-newfoundland.sh
+        container: qc.ver_gamy-brass-rottweiler
 timeout: 5400
